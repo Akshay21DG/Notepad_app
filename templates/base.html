@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad App</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+</head>
+<style>
+    .container{
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        margin-left:300px;
+        margin-right: 100px;
+        padding-top: 30px;
+        padding-left: 100px;
+        padding-right: 100px;
+        width: 60%;
+    }
+</style>
+<body>
+    <div style="margin-top: 50px;" >
+        <h1 class="ui center aligned header">NOTEPAD</h1>
+    </div>
+    <br><br>
+    <div class = "container" align="center">
+        <form class="ui form" action="/add" method="post">
+            <div class="field">
+                <label style="font-size: 20px;"; >Create New File</label><br>
+                <input type="text" name="path" placeholder="Enter File Path..."><br><br><br>
+                <input type="text" name="name" placeholder="Enter File Name..."><br>
+                <!-- <textarea id="title" name="title" rows="20" cols="15">words[0]</textarea> -->
+            </div><br>
+            <button class="ui blue button" type="submit">Create New</button><br><br>
+        </form>
+    </div>        
+
+</body>
+
+</html>
